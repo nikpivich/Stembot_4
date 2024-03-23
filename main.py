@@ -5,7 +5,7 @@ from aiogram.client.default import DefaultBotProperties
 
 import config
 from aiogram import Bot, Dispatcher
-from handlers import questions, base,gen_image, no_handler, test, games
+from handlers import questions, base,gen_image, no_handler, test, games, food
 from aiogram.enums.parse_mode import ParseMode
 
 
@@ -18,6 +18,7 @@ async def main():
 
 
     dp.include_routers(base.router,
+                       food.router,
                        questions.router,
                        gen_image.router,
                        test.router,
