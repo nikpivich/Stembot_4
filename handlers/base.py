@@ -8,7 +8,7 @@ router = Router()
 
 @router.message(Command('start'))
 async def cmd_start(message: Message):
-    await message.answer(f"Приветствую тебя {message.from_user.username} \n"
+    await message.answer(f"Приветствую тебя {message.from_user.username}, {message.from_user.id} \n"
                          f"Я бот с множнством функций. Вот некоторые",
                          reply_markup=for_base.menu)
 
