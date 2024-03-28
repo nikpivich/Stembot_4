@@ -31,7 +31,6 @@ async def main():
 
 
     dp.include_routers(base.router,
-                       bot_in_group.router,
                        food.router,
                        questions.router,
                        gen_image.router,
